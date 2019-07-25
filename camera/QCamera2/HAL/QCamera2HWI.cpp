@@ -1693,7 +1693,6 @@ QCamera2HardwareInterface::QCamera2HardwareInterface(uint32_t cameraId)
     pthread_condattr_init(&mCondAttr);
     pthread_condattr_setclock(&mCondAttr, CLOCK_MONOTONIC);
 
-
     pthread_mutex_init(&m_lock, NULL);
     pthread_cond_init(&m_cond, &mCondAttr);
 
