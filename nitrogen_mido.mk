@@ -21,16 +21,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
-
-# Inherit some common StagOs stuff
-$(call inherit-product, vendor/stag/main.mk)
+# Inherit some common Nitrogen stuff
+$(call inherit-product, vendor/nitrogen/products/common.mk)
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := stag_mido
+PRODUCT_NAME := nitrogen_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
