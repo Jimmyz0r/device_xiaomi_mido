@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
 
+# Its Official StagOS
+BUILD_TYPE := OFFICIAL
+
 
 # Inherit some common StagOs stuff
 $(call inherit-product, vendor/stag/main.mk)
